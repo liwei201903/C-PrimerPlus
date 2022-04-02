@@ -1,0 +1,104 @@
+1.
+a:
+char actor[30];
+b:
+short betsie[100];
+c:
+float chuck[13];
+d:
+long double
+
+2.
+#include <array>
+array<char, 30> actor;
+array<short, 100> betsie;
+array<float, 13> chuck;
+array<long double, 64> dipsea;
+
+3.
+int arr[5] = {1, 3, 5, 7, 9};
+
+4.
+int arr[5] = {1, 3, 5, 7, 9};
+int even = arr[0] + arr[4];
+
+5.
+float ideas[10];
+cout << ideas[1] << endl;
+
+6.
+char str[] = "cheeseburger";
+
+7.
+string str = "Waldorf Salad"
+
+8.
+struct fish
+{
+	char kind[30];
+	int weight;
+	float length;
+};
+
+9.
+struct fish
+{
+	char kind[30];
+	int weight;
+	float length;
+};
+
+fish ff = {"BigFish", 12, 4.2}
+
+10.
+enum Response {No, Yes, Maybe};
+
+11.
+double ted = 1.8;
+double *pt = &ted;
+cout << "ted = " << *pt << endl;
+
+12.
+float teacle[10];
+float *pt = treacle[0];   //  float *pt = treacle;
+cout << pt[0] << " " << pt[9] << endl;
+
+13.
+int size;
+cout << "Enter a number: " << endl ;
+cin >> size;
+int *pt = new int[size];
+vector<int> arr(size);
+
+14.
+ valiable,print string's address. won't print string "Home of jolly bytes"
+
+15.
+struct fish
+{
+	char kind[30];
+	int weight;
+	float length;
+};
+
+fish *pt = new fish;
+cout << pt-> kind << "," << pt->weight << "." << endl;
+
+16.
+cin >> address; >> read from input until it comes a blank
+cin.getline(address, 80);
+getline函数是读取一行输入，直到遇到回车为止。getline用于捕获，中间有空格也没关系，
+但限制长度80个字符。
+例如： 输入David Lee 中间的空格也算输入的，不会截断
+cin >> address;
+例如：输入David Lee 中间空格会截断，但是不限制字符长度，只要缓存能存下就可以。
+
+17.
+#include <string>
+#include <vector>
+#include <array>
+
+const int size = 10;
+std::vector<std::string> arr(size);
+std::array<std::string, size> array;
+
